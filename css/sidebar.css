@@ -1,0 +1,18 @@
+.mobile_sidebar_nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 65%;
+    min-height: 100vh;
+    right: -69%;
+    background-color: rgb(34, 34, 34);
+    transition: 0.9s;
+}
+
+.is-active-sec {
+    right: 0;
+}
+
+.brightness_toggle {
+    filter: brightness(50);
+}
