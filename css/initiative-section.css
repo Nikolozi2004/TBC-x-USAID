@@ -1,0 +1,37 @@
+.initiative-section {
+    font-family: 'TBC-initiative' !important;
+    min-height: 352px;
+    height: 352px;
+    min-width: 100%;
+    background-image: url("../images/initiative-section-background-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.initiative_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 980px;
+    height: 100%;
+}
+
+.initiative_span_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    color: #f4f4f4;
+    font-size: 1.6em;
+    width: 100%;
+    line-height: 1.6rem;
+}
+
+.initiative_span_container span {
+    padding-bottom: 10px;
+}

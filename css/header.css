@@ -1,6 +1,7 @@
 /* Header */
 
 #header {
+    font-family: 'TBC-reg';
     position: relative;
     display: flex;
     justify-content: center;
@@ -8,7 +9,7 @@
     background-color: #1A1E1F;
     width: 100%;
     height: 84px;
-    color: white;
+    color: #fff;
     z-index: 99 !important;
     position: fixed;
     top: 0 !important;
@@ -61,7 +62,7 @@ header.scroll {
     text-decoration: none;
     color: #f4f4f4;
     padding: 0 10px;
-    font-size: 1rem;
+    font-size: 14px;
     font-style: inherit;
     font-weight: inherit;
     letter-spacing: normal;
@@ -69,6 +70,7 @@ header.scroll {
 }
 
 .navbar_link:hover {
+    transition: 0.7s;
     color: #00a3e0;
 }
 
@@ -81,10 +83,12 @@ header.scroll {
     .hamburger {
         display: none;
     }
+
     .mobile_sidebar.nav {
         display: none;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .navbar {
         display: none;
@@ -92,9 +96,9 @@ header.scroll {
 }
 
 .hamburger {
+    position: fixed !important;
     width: 26px;
     cursor: pointer;
-    height: 21px;
     appearance: none;
     background: none;
     outline: none;
@@ -105,7 +109,9 @@ header.scroll {
     z-index: 3000;
 }
 
-.hamburger .hamburger_bar, .hamburger::after, .hamburger::before {
+.hamburger .hamburger_bar,
+.hamburger::after,
+.hamburger::before {
     content: '';
     display: block;
     margin: 6px 0;

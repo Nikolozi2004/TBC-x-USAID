@@ -4,6 +4,16 @@ window.onload = () => {
     menu_Button.addEventListener('click', () => {
         menu_Button.classList.toggle('is-active');
         mobile_Menu.classList.toggle('is-active-sec');
-        brightnessHandler.classList.toggle('brightness_toggle')
-    })
-}
+    });
+};
+
+// const brightnessHandler = () => {
+//     const brightnessDown = document.getElementById('body');
+//     if (brightnessDown.length > 0) {
+//         brightnessDown[0].classList.toggle('123123');
+//     } else {
+//         console.log('Error: Element not found');
+//     }
+// };
+
+// brightnessHandler();

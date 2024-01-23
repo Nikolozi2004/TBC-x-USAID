@@ -1,9 +1,18 @@
+@font-face {
+    font-family: 'TBC-reg';
+    src: url('../fonts/file.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'TBC-initiative';
+    src: url(../fonts/filesec2.woff2) format('woff2');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-
+    vertical-align: baseline;
 }
 
 body {
@@ -12,6 +21,7 @@ body {
 
 .top_block {
     width: 100%;
-    height: 84px;
-    background-color: #ffffff;
+    height: 84px !important;
+    min-height: 84px;
+    background-color: #313131;
 }
