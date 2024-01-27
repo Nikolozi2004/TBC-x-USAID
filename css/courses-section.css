@@ -3,37 +3,151 @@
     width: 100%;
     height: 1485px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
     display: relative;
+    overflow: hidden;
+    flex-direction: column;
+    font-family: 'TBC-reg';
 }
 
-.teaching-curses {
-    top: 20px;
-    left: 20px;
-}
-/* .course-wrapper {
+.courses-container {
     width: 980px;
     height: 100%;
-} */
+    display: flex;
+    justify-content: center;
+}
 
 .cards-container {
-    width: 980px;
+    align-items: center;
+    justify-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 980px;
+}
+
+.teaching-courses-title {
+    font-family: 'TBC-reg';
+    color: #f4f4f4;
+    text-align: left;
+    width: 980px;
+    padding: 30px 0 50px 0;
+}
+
+.card-content {
+    text-align: left;
+    padding: 20px;
+    height: 63%;
 }
 
 .card {
-    height: 290px;
-    width: 300px;
     border-width: 1px 1px 1px 1px;
     border-style: solid solid solid solid;
     border-color: rgba(85, 85, 85, 1) rgba(85, 85, 85, 1) rgba(85, 85, 85, 1) rgba(85, 85, 85, 1);
     border-radius: 6px 6px 6px 6px;
     overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 400px;   
 }
 
 .card img {
-    min-width: 100%;
+    width: 100%;
+    height: 150px;
+}
+
+.card h4 {
+    font-family: 'TBC-reg';
+    color: #f4f4f4;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.card p {
+    font-family: 'TBC-reg';
+    color: #f4f4f4;
+    padding-bottom: 20px;
+}
+
+
+
+.card a {
+    bottom: 20px;
+    left: 50px;
+    position: absolute;
+    font-family: 'TBC-course-details';
+    text-decoration: none;
+    color: #00aeef;
+}
+
+.card a:hover {
+    color: #0489b9;
+    transition: 570ms;
+}
+
+.arrow-icon {
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+    color: #00AEEF;
+    fill: #00AEEF;
+}
+
+@media screen and (max-width: 1000px) {
+    .courses-section {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .teaching-courses-title {
+        width: 100%;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 800px;
+        column-gap: 5px;
+    }
+
+    .card {
+        width: 350px;
+        margin-bottom: 20px;
+        gap: 0;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    
+}
+
+@media screen and (max-width: 460px) {
+    .cards-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .card {
+        width: 320px;
+        height: 320px;
+        margin-bottom: -6.5px;
+        gap: 0;
+    }
+    
+}
+
+@media screen and (max-width: 340px) {
+    .card {
+        width: 280px;
+        height: 290px;
+    }
+
+    .card-content {
+        padding: 5px;
+    }
+    
 }

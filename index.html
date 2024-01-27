@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 
 <head>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/slider-section.css">
+    <link rel="stylesheet" href="./css/accordion-section.css">
     <link rel="stylesheet" href="./css/courses-section.css">
     <link rel="stylesheet" href="./css/about-section.css">
     <link rel="stylesheet" href="./css/initiative-section.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/sidebar.css">
-    <link rel="icon" href="./images/tab_image.png" type="image/png" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="icon" href="./images/tab_image.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TBC x USAID</title>
@@ -16,7 +19,9 @@
 
 <body>
     <div class="top_block"></div>
+    <!-- Header -->
     <header id="header">
+        <!-- Header content -->
         <div class="header_content_container">
             <div class="header_logo">
                 <svg preserveAspectRatio="xMidYMid meet" data-bbox="-0.049 -0.035 160.05 35.031"
@@ -98,7 +103,8 @@
         </div>
 
     </header>
-    <div class="hamburger" onclick="brightnessHandler()">
+    <!-- Sidebar -->
+    <div class="hamburger" onclick="toggleOverlay()">
         <div class="hamburger_bar"></div>
     </div>
     <div class="mobile_sidebar_nav">
@@ -117,112 +123,377 @@
             </li>
         </ul>
     </div>
+    <!-- Sections Starts Here -->
     <section class="initiative-section">
         <div class="initiative_container">
-            <h3 class="initiative_span_container">
-                <span>TBC x USAID</span>
-                <span>ᲢᲔᲥᲜᲝᲚᲝᲒᲘᲣᲠᲘ ᲒᲐᲜᲐᲗᲚᲔᲑᲘᲡᲗᲕᲘᲡ</span>
-            </h3>
+            <h1>TBC x USAID</h1>
+            <h1>ᲢᲔᲥᲜᲝᲚᲝᲒᲘᲣᲠᲘ ᲒᲐᲜᲐᲗᲚᲔᲑᲘᲡᲗᲕᲘᲡ</h1>
         </div>
     </section>
     <section class="about-section">
         <div class="about-container">
-            <span>
+            <h2>
                 „ TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა საინფორმაციო ტექნოლოგიებით დაინტერესებულ
                 ადამიანებს
                 გთავაზობთ სრულად დაფინანსებულ ონლაინ საგანმანათლებლო პრაქტიკულ კურსებს სხვადასხვა ICT მიმართულებით.
                 წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა დასაქმდნენ თიბისისა და მის პარტნიორ კომპანიებში.
-            </span>
-            <h3>
-                <a href="#">გაიგე მეტი</a>
-            </h3>
+            </h2>
+            <a href="#" class="learn-more-link">გაიგე მეტი</a>
+
         </div>
     </section>
+    <!-- Cards  -->
     <section class="courses-section">
-        <h3 class="teaching-courses">
+        <h1 class="teaching-courses-title">
             სასწავლო კურსები
-        </h3>
+        </h1>
         <div class="cards-container">
             <div class="card">
                 <img src="./images/ios_development.png" alt="IOS Development">
-                <div card-content>
-                    <h4>1</h4>
-                    <p>1</p>
-                    <a href="#">1</a>
+                <div class="card-content">
+                    <h4>iOS Development</h4>
+                    <p>რეგისტრაცია დასრულებულია</p>
+                    <a href="#">კურსის დეტალები</a>
+                    <svg class="arrow-icon" preserveAspectRatio="xMidYMid meet" data-bbox="1.833 2.667 13.334 10.666"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="1.833 2.667 13.334 10.666" height="16" width="17"
+                        data-type="color" role="presentation" aria-hidden="true">
+                        <g>
+                            <path fill="#00AEEF"
+                                d="m10.3 2.867 4.667 4.666a.645.645 0 0 1 0 .934L10.3 13.133a.644.644 0 0 1-.933 0 .644.644 0 0 1 0-.933L12.9 8.667H2.5c-.4 0-.667-.267-.667-.667s.267-.667.667-.667h10.4L9.367 3.8a.605.605 0 0 1-.2-.467c0-.2.066-.333.2-.466a.644.644 0 0 1 .933 0Z"
+                                data-color="1">
+                            </path>
+                        </g>
+                    </svg>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/react.png" alt="React">
-                <div card-content>
-                    <h4>1</h4>
-                    <p>1</p>
-                    <a href="#">1</a>
+                <div class="card-content">
+                    <h4>React</h4>
+                    <p>რეგისტრაცია დასრულებულია</p>
+                    <a href="#">კურსის დეტალები</a>
+                    <svg class="arrow-icon" preserveAspectRatio="xMidYMid meet" data-bbox="1.833 2.667 13.334 10.666"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="1.833 2.667 13.334 10.666" height="16" width="17"
+                        data-type="color" role="presentation" aria-hidden="true">
+                        <g>
+                            <path fill="#00AEEF"
+                                d="m10.3 2.867 4.667 4.666a.645.645 0 0 1 0 .934L10.3 13.133a.644.644 0 0 1-.933 0 .644.644 0 0 1 0-.933L12.9 8.667H2.5c-.4 0-.667-.267-.667-.667s.267-.667.667-.667h10.4L9.367 3.8a.605.605 0 0 1-.2-.467c0-.2.066-.333.2-.466a.644.644 0 0 1 .933 0Z"
+                                data-color="1">
+                            </path>
+                        </g>
+                    </svg>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/intro_to_python.png" alt="Intro to Python
                 ">
-                <div card-content>
-                    <h4>1</h4>
-                    <p>1</p>
-                    <a href="#">1</a>
+                <div class="card-content">
+                    <h4>Intro to Python</h4>
+                    <p>რეგისტრაცია დასრულებულია</p>
+                    <a href="#">კურსის დეტალები</a>
+                    <svg class="arrow-icon" preserveAspectRatio="xMidYMid meet" data-bbox="1.833 2.667 13.334 10.666"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="1.833 2.667 13.334 10.666" height="16" width="17"
+                        data-type="color" role="presentation" aria-hidden="true">
+                        <g>
+                            <path fill="#00AEEF"
+                                d="m10.3 2.867 4.667 4.666a.645.645 0 0 1 0 .934L10.3 13.133a.644.644 0 0 1-.933 0 .644.644 0 0 1 0-.933L12.9 8.667H2.5c-.4 0-.667-.267-.667-.667s.267-.667.667-.667h10.4L9.367 3.8a.605.605 0 0 1-.2-.467c0-.2.066-.333.2-.466a.644.644 0 0 1 .933 0Z"
+                                data-color="1">
+                            </path>
+                        </g>
+                    </svg>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/advanced_python.png" alt="Advanced Python">
-                <div card-content>
-                    <h4>1</h4>
-                    <p>1</p>
-                    <a href="#">1</a>
+                <div class="card-content">
+                    <h4>Advanced Python</h4>
+                    <p>რეგისტრაცია დასრულებულია</p>
+                    <a href="#">კურსის დეტალები</a>
+                    <svg class="arrow-icon" preserveAspectRatio="xMidYMid meet" data-bbox="1.833 2.667 13.334 10.666"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="1.833 2.667 13.334 10.666" height="16" width="17"
+                        data-type="color" role="presentation" aria-hidden="true">
+                        <g>
+                            <path fill="#00AEEF"
+                                d="m10.3 2.867 4.667 4.666a.645.645 0 0 1 0 .934L10.3 13.133a.644.644 0 0 1-.933 0 .644.644 0 0 1 0-.933L12.9 8.667H2.5c-.4 0-.667-.267-.667-.667s.267-.667.667-.667h10.4L9.367 3.8a.605.605 0 0 1-.2-.467c0-.2.066-.333.2-.466a.644.644 0 0 1 .933 0Z"
+                                data-color="1">
+                            </path>
+                        </g>
+                    </svg>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/advanced_cybersecurity_course.png" alt="Advanced Cybersecurity Course">
-                <div card-content>
-                    <h4>1</h4>
-                    <p>1</p>
-                    <a href="#">1</a>
+                <div class="card-content">
+                    <h4>Advanced Cybersecurity Course</h4>
+                    <p>რეგისტრაცია დასრულებულია</p>
+                    <a href="#">კურსის დეტალები</a>
+                    <svg class="arrow-icon" preserveAspectRatio="xMidYMid meet" data-bbox="1.833 2.667 13.334 10.666"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="1.833 2.667 13.334 10.666" height="16" width="17"
+                        data-type="color" role="presentation" aria-hidden="true">
+                        <g>
+                            <path fill="#00AEEF"
+                                d="m10.3 2.867 4.667 4.666a.645.645 0 0 1 0 .934L10.3 13.133a.644.644 0 0 1-.933 0 .644.644 0 0 1 0-.933L12.9 8.667H2.5c-.4 0-.667-.267-.667-.667s.267-.667.667-.667h10.4L9.367 3.8a.605.605 0 0 1-.2-.467c0-.2.066-.333.2-.466a.644.644 0 0 1 .933 0Z"
+                                data-color="1">
+                            </path>
+                        </g>
+                    </svg>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/tot-training_of_trainers.png" alt="ToT - Training of Trainers">
-                <div card-content>
-                    <h4>1</h4>
-                    <p>1</p>
-                    <a href="#">1</a>
+                <div class="card-content">
+                    <h4>ToT - Training of Trainers</h4>
+                    <p>რეგისტრაცია დასრულებულია</p>
+                    <a href="#">კურსის დეტალები</a>
+                    <svg class="arrow-icon" preserveAspectRatio="xMidYMid meet" data-bbox="1.833 2.667 13.334 10.666"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="1.833 2.667 13.334 10.666" height="16" width="17"
+                        data-type="color" role="presentation" aria-hidden="true">
+                        <g>
+                            <path fill="#00AEEF"
+                                d="m10.3 2.867 4.667 4.666a.645.645 0 0 1 0 .934L10.3 13.133a.644.644 0 0 1-.933 0 .644.644 0 0 1 0-.933L12.9 8.667H2.5c-.4 0-.667-.267-.667-.667s.267-.667.667-.667h10.4L9.367 3.8a.605.605 0 0 1-.2-.467c0-.2.066-.333.2-.466a.644.644 0 0 1 .933 0Z"
+                                data-color="1">
+                            </path>
+                        </g>
+                    </svg>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/blockchain.png" alt="Blockchain">
-                <div card-content>
-                    <h4>1</h4>
-                    <p>1</p>
-                    <a href="#">1</a>
+                <div class="card-content">
+                    <h4>Blockchain</h4>
+                    <p>რეგისტრაცია დასრულებულია</p>
+                    <a href="#">კურსის დეტალები</a>
+                    <svg class="arrow-icon" preserveAspectRatio="xMidYMid meet" data-bbox="1.833 2.667 13.334 10.666"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="1.833 2.667 13.334 10.666" height="16" width="17"
+                        data-type="color" role="presentation" aria-hidden="true">
+                        <g>
+                            <path fill="#00AEEF"
+                                d="m10.3 2.867 4.667 4.666a.645.645 0 0 1 0 .934L10.3 13.133a.644.644 0 0 1-.933 0 .644.644 0 0 1 0-.933L12.9 8.667H2.5c-.4 0-.667-.267-.667-.667s.267-.667.667-.667h10.4L9.367 3.8a.605.605 0 0 1-.2-.467c0-.2.066-.333.2-.466a.644.644 0 0 1 .933 0Z"
+                                data-color="1">
+                            </path>
+                        </g>
+                    </svg>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/devops.png" alt="DevOps">
-                <div card-content>
-                    <h4>1</h4>
-                    <p>1</p>
-                    <a href="#">1</a>
+                <div class="card-content">
+                    <h4>DevOps</h4>
+                    <p>რეგისტრაცია დასრულებულია</p>
+                    <a href="#">კურსის დეტალები</a>
+                    <svg class="arrow-icon" preserveAspectRatio="xMidYMid meet" data-bbox="1.833 2.667 13.334 10.666"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="1.833 2.667 13.334 10.666" height="16" width="17"
+                        data-type="color" role="presentation" aria-hidden="true">
+                        <g>
+                            <path fill="#00AEEF"
+                                d="m10.3 2.867 4.667 4.666a.645.645 0 0 1 0 .934L10.3 13.133a.644.644 0 0 1-.933 0 .644.644 0 0 1 0-.933L12.9 8.667H2.5c-.4 0-.667-.267-.667-.667s.267-.667.667-.667h10.4L9.367 3.8a.605.605 0 0 1-.2-.467c0-.2.066-.333.2-.466a.644.644 0 0 1 .933 0Z"
+                                data-color="1">
+                            </path>
+                        </g>
+                    </svg>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/information_security_governance.png" alt="Information Security Governance">
-                <div card-content>
-                    <h4>1</h4>
-                    <p>1</p>
-                    <a href="#">1</a>
+                <div class="card-content">
+                    <h4>Information Security Governance</h4>
+                    <p>რეგისტრაცია დასრულებულია</p>
+                    <a href="#">კურსის დეტალები</a>
+                    <svg class="arrow-icon" preserveAspectRatio="xMidYMid meet" data-bbox="1.833 2.667 13.334 10.666"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="1.833 2.667 13.334 10.666" height="16" width="17"
+                        data-type="color" role="presentation" aria-hidden="true">
+                        <g>
+                            <path fill="#00AEEF"
+                                d="m10.3 2.867 4.667 4.666a.645.645 0 0 1 0 .934L10.3 13.133a.644.644 0 0 1-.933 0 .644.644 0 0 1 0-.933L12.9 8.667H2.5c-.4 0-.667-.267-.667-.667s.267-.667.667-.667h10.4L9.367 3.8a.605.605 0 0 1-.2-.467c0-.2.066-.333.2-.466a.644.644 0 0 1 .933 0Z"
+                                data-color="1">
+                            </path>
+                        </g>
+                    </svg>
                 </div>
             </div>
         </div>
     </section>
-    <section class="project-partners-slider">
-        <!-- slider -->
+    <!-- Slider -->
+    <section class="slider-section">
+        <h2>პროექტის პარტნიორები</h2>
+        <div class="slider-container" id="sliderContainer">
+            <div class="slider-item fadeIn">
+                <img src="./images/slider-images/usaid.webp" alt="USAID">
+                <img src="./images/slider-images/spaceint.webp" alt="Space Int.">
+                <img src="./images/slider-images/tineti.webp" alt="Tineti">
+            </div>
+            <div class="slider-item">
+                <img src="./images/slider-images/tegeta.webp" alt="Tegeta Holding">
+                <img src="./images/slider-images/spectre.webp" alt="Spectre">
+                <img src="./images/slider-images/tbcl.webp" alt="TBC Lising">
+            </div>
+            <div class="slider-item">
+                <img src="./images/slider-images/ufc.webp" alt="UFC">
+            </div>
+
+            <div class="slider-nav">
+                <div class="slider-nav-button-container">
+                    <div class="slider-nav-button" onclick="goToSlide(1)">Slide 1</div>
+                    <div class="slider-nav-button" onclick="goToSlide(2)">Slide 2</div>
+                    <div class="slider-nav-button" onclick="goToSlide(3)">Slide 3</div>
+                </div>
+                <div class="slider-navigator-left" onclick="prevSlide()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41">
+                        <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+                    </svg>
+                </div>
+                <div class="slider-navigator-right" onclick="nextSlide()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41">
+                        <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- Accordion -->
+    <section class="accordion-section">
+        <div class="accordion-header">
+            <h2 class="accordion-title">ხშირად დასმული კითხვები</h2>
+            <a href="#" class="all-questions">ყველა კითხვა</a>
+        </div>
+        <div class="accordion">
+            <div class="accordion-container">
+                <div class="accordion-question">
+                    როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?
+                    <div class="accordion-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="arrowDown"
+                                d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion-answer">
+                    <div class="accordion-answer-content">
+                        I ეტაპი - პირველ ეტაპზე საჭიროა, შეავსო სასურველი კურსისთვის განკუთვნილი სარეგისტრაციო ფორმა,
+                        რომელიც განთავსებულია კურსის შიდა გვერდზე. კურსზე რეგისტრაციის დასრულების შემდეგ დაიწყება
+                        შემოსული
+                        განცხადებების გადარჩევა.
+                        <br>
+                        II ეტაპი - შერჩევის მეორე ეტაპი კურსების მიხედვით განსხვავებულია, ზოგიერთი კურსისთვის მოიცავს
+                        პრე-ტესტს, ზოგიერთ კურსზე კი უნარების ტესტს, სადაც მინიმალური ზღვარის გადალახვის შემთხვევაში
+                        გადახვალ შერჩევის შემდეგ ეტაპზე.
+                        <br>
+                        III ეტაპი - მესამე ეტაპი კურსების მიხედვით განსხვავდება: Advance კურსებზე, სადაც მოითხოვება
+                        გარკვეული ტექნიკური ცოდნა, მონაწილეებმა უნდა დაწერონ ტექნიკური ტესტი ცოდნის დონის შესამოწმებლად,
+                        ხოლო კურსებზე, სადაც რაიმე ტიპის წინასწარი ცოდნა მოთხოვნილი არ არის უნდა შეასრულოთ ტექნიკური
+                        დავალება, რაც თქვენი კვლევისა და თვითსწავლის უნარს ამოწმებს.
+                        <br>
+                        IV ეტაპი - შერჩევის ბოლო მეოთხე ეტაპი მოიცავს გასაუბრებას შესარჩევ კომისიასთან. გასაუბრების
+                        წარმატებით გავლის შემთხვევაში ჩაირიცხებით კურსზე და გაფორმდება შესაბამისი ხელშეკრულება.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-container">
+                <div class="accordion-question">
+                    შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?
+                    <div class="accordion-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="arrowDown"
+                                d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion-answer">
+                    <div class="accordion-answer-content">
+                        TBC X USAID ტექნოლოგიური განათლებისთვის პროგრამაში თითოეულ კანდიდატს აქვს მხოლოდ ერთი კურსის
+                        გავლის
+                        შესაძლებლობა. გარდა Information Security და Python კურსებისა, სადაც Basic დონის გავლის შემდეგ
+                        შესაძლებელია სწავლის გაგრძელება Advance დონეზე.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-container">
+                <div class="accordion-question">
+                    რა ღირს სწავლა პროგრამის ფარგლებში?
+                    <div class="accordion-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="arrowDown"
+                                d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion-answer">
+                    <div class="accordion-answer-content">
+                        პროგრამის ფარგლებში კურსებზე სწავლა სრულიად დაფინანსებულია თიბისი ბანკისა და USAID-ის მიერ.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Sections End Here -->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer_content_container">
+            <div class="footer_left">
+                <img src="./images/footer_logo.webp" alt="footer_logo">
+                <p>© 2023 ყველა უფლება დაცულია</p>
+                <p class="terms-and-conditions" onclick="toggleOverlay()">წესები და პირობები</p>
+            </div>
+            <div class="footer_right">
+                <div>
+                    <a href="https://www.facebook.com/tbcbank/" target="_blank">
+                        <img src="./images/facebook_link_logo.webp" alt="Facebook Link">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCGk9R2LV2ywOL80r8Xc6xtQ" target="_blank">
+                        <img src="./images/youtube_link_logo.webp" alt="Youtube Link">
+                    </a>
+                </div>
+                <a href="mailto:itacademy@tbcbank.com.ge" target="_self" aria-disabled="false">
+                    <div class="footer_mail">მოგვწერეთ</div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Terms and Conditions -->
+    <div class="terms-conditions">
+        <div>
+            <div class="back" onclick="toggleOverlay()">
+                <svg preserveAspectRatio="xMidYMid meet" data-bbox="82.189 55.096 481.811 481.808"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="82.189 55.096 481.811 481.808" role="presentation"
+                    aria-hidden="true">
+                    <g>
+                        <path
+                            d="M531.936 536.904L323.094 328.063 114.253 536.904l-32.064-32.062L291.032 296 82.189 87.157l32.064-32.061 208.842 208.842L531.936 55.096 564 87.157 355.155 296 564 504.842l-32.064 32.062z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+
+        </div>
+        <h2>წესები და პირობები</h2>
+        <p>წინამდებარე ვებ-გვერდის გამოყენება რეგულირდება სს „თიბისი ბანკის“ (საიდენტიფიკაციო ნომერი: 204854595,
+            მისამართი: თბილისი, კ. მარჯანიშვილის ქ. #7) მიერ დადგენილი წესებითა და პირობებით.
+        </p>
+        <br>
+        <p>
+            ტერმინები „ბანკი“, „ჩვენ“ გულისხმობს სს „თიბისი ბანკს“ (ასევე მისი ჯგუფის წევრ მონათესავე, შვილობილ,
+            აფილირებულ კომპანიებს), ხოლო ტერმინი „თქვენ“, „მომხმარებელი“ გულისხმობს ინდივიდს, კომპანიას, ორგანიზაციულ
+            წარმონაქმნს, რომელიც იყენებს ბანკის წინამდებარე ვებ-გვერდს.
+        </p>
+        <button>დახურვა</button>
+    </div>
+
+    <!-- overlay -->
+    <div id="overlay"></div>
+
+    <script src="./js/terms.js"></script>
+    <script src="./js/overlay.js"></script>
+    <script src="./js/terms.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/sidebar.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/accordion.js"></script>
 </body>
 
 </html>
