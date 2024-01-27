@@ -4,8 +4,11 @@ I've created a clone of the TBC x USAID website This project mimics the visual a
 
 ## Key Features
 Responsive Design: The website adapts seamlessly to different screen sizes, ensuring a consistent user experience across devices.
+
 Navigation: Implemented a navigation system similar to TBC x USAID, allowing users to explore different sections of the website with ease.
+
 Interactive Elements: Included interactive components such as sliders, accordions, or any other dynamic features present on the original TBC x USAID website.
+
 Technologies Used: such as HTML, CSS, JavaScript.
 
 ## File Structure
