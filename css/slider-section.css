@@ -31,8 +31,9 @@
 }
 
 .slider-navigator-right {
-    fill: rgb(232,230,230);
-    color: rgb(232,230,230);;
+    fill: rgb(232, 230, 230);
+    color: rgb(232, 230, 230);
+    ;
     right: 8%;
     top: 30px;
     width: 18px;
@@ -40,19 +41,20 @@
     cursor: pointer;
     transform: scaleX(-1);
     position: absolute;
-    stroke: rgb(232,230,230);
+    stroke: rgb(232, 230, 230);
 }
 
 .slider-navigator-left {
-    fill: rgb(232,230,230);
-    color: rgb(232,230,230);;
+    fill: rgb(232, 230, 230);
+    color: rgb(232, 230, 230);
+    ;
     left: 8%;
     top: 30px;
     width: 18px;
     height: 35.15px;
     cursor: pointer;
     position: absolute;
-    stroke: rgb(232,230,230);
+    stroke: rgb(232, 230, 230);
 }
 
 .slider-navigator-left:hover {
@@ -148,26 +150,26 @@
         right: 15px;
         top: 30px;
     }
-    
+
     .slider-navigator-left {
         left: 15px;
         top: 30px;
     }
-    
+
 }
 
 @media screen and (max-width: 980px) {
     .slider-section h2 {
         width: 90%;
     }
-    
+
 }
 
 @media screen and (max-width: 710px) {
     .slider-navigator-right {
         display: none;
     }
-    
+
     .slider-navigator-left {
         display: none;
     }
@@ -181,8 +183,8 @@
 }
 
 @media screen and (max-width: 490px) {
-    .slider-section  {
+    .slider-section {
         height: 450px;
     }
-    
+
 }

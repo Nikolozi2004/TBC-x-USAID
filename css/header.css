@@ -80,7 +80,7 @@ header.scroll {
     .header_logo {
         padding-left: 20px;
     }
-    
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -103,7 +103,7 @@ header.scroll {
     .header_logo svg {
         width: 150px;
     }
-    
+
 }
 
 .hamburger {
@@ -132,6 +132,7 @@ header.scroll {
     transition: transform .33s ease-out;
     border-radius: 10px;
 }
+
 .hamburger::after {
     content: '';
     display: block;
@@ -159,7 +160,7 @@ header.scroll {
 }
 
 .hamburger.is-active::before {
-    transform:  rotate(45deg) translate(4px, -1.5px);
+    transform: rotate(45deg) translate(4px, -1.5px);
 }
 
 .hamburger.is-active::after {

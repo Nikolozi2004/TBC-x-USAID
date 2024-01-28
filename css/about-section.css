@@ -47,7 +47,7 @@
 }
 
 .learn-more-link:hover {
-    color: rgb(170,170,170);
+    color: rgb(170, 170, 170);
     transition: 0.39s;
 }
 
@@ -55,14 +55,14 @@
     .about-container {
         width: 100%;
     }
-    
+
 }
 
 @media screen and (max-width: 920px) {
     .about-container h2 {
         font-size: 24px;
     }
-    
+
 }
 
 @media screen and (max-width: 720px) {
@@ -70,14 +70,14 @@
         transition: 0.5s;
         bottom: 10%;
     }
-    
+
 }
 
 @media screen and (max-width: 633px) {
     .about-container h2 {
         font-size: 20px;
     }
-    
+
 }
 
 @media screen and (max-width: 465px) {
@@ -85,36 +85,37 @@
         transition: 0.5s;
         bottom: 5%;
     }
+
     .about-container h2 {
         font-size: 19px;
     }
-    
+
 }
 
 @media screen and (max-width: 416px) {
     .about-container h2 {
         font-size: 18px;
     }
-    
+
 }
 
 @media screen and (max-width: 360px) {
     .about-container h2 {
         font-size: 16.5px;
     }
-    
+
 }
 
 @media screen and (max-width: 320px) {
     .about-container h2 {
         font-size: 15px;
     }
-    
+
 }
 
 @media screen and (max-width: 276px) {
     .about-container h2 {
         font-size: 14px;
     }
-    
+
 }
