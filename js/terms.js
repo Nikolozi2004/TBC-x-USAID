@@ -5,8 +5,11 @@ const termsConditions = document.querySelector('.terms-conditions');
 termsandConditions.addEventListener('click', () => {
     toggleClassz(termsConditions, 'is-active-third');
 });
-
+const close = document.querySelector('.close');
 const back = document.querySelector('.back');
 back.addEventListener('click', () => {
+    toggleClassz(termsConditions, 'is-active-third');
+});
+close.addEventListener('click', () => {
     toggleClassz(termsConditions, 'is-active-third');
 });

@@ -54,3 +54,31 @@
     color: rgb(170, 170, 170);
     transition: 0.35s;
 }
+
+.footer_left img {
+    padding: 10px;
+}
+
+.footer_left p {
+    padding: 10px;
+}
+
+.footer_right div>a {
+    margin-right: 10px;
+}
+
+.footer_right a>div {
+    margin-top: 20px;
+}
+
+.footer_social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 450px) {
+    .footer_left:nth-child(1) {
+        font-size: 10px;
+    }
+    
+}

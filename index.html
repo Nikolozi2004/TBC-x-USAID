@@ -94,7 +94,7 @@
                     <a href="#" class="navbar_link">TBC IT</a>
                 </li>
                 <li class="navbar_link_container">
-                    <a href="./index.html" class="navbar_link">TBC x USAID</a>
+                    <a href="./index.html" class="navbar_link current">TBC x USAID</a>
                 </li>
                 <li class="navbar_link_container">
                     <a href="#" class="navbar_link">რისკები</a>
@@ -116,7 +116,7 @@
                 <a href="#" class="sidebar_link">TBC IT</a>
             </li>
             <li class="sidebar_link_container">
-                <a href="./index.html" class="sidebar_link">TBC x USAID</a>
+                <a href="./index.html" class="sidebar_link current">TBC x USAID</a>
             </li>
             <li class="sidebar_link_container">
                 <a href="#" class="sidebar_link">რისკები</a>
@@ -333,9 +333,9 @@
 
             <div class="slider-nav">
                 <div class="slider-nav-button-container">
-                    <div class="slider-nav-button" onclick="goToSlide(1)">Slide 1</div>
-                    <div class="slider-nav-button" onclick="goToSlide(2)">Slide 2</div>
-                    <div class="slider-nav-button" onclick="goToSlide(3)">Slide 3</div>
+                    <div class="slider-nav-button" onclick="goToSlide(1)"></div>
+                    <div class="slider-nav-button" onclick="goToSlide(2)"></div>
+                    <div class="slider-nav-button" onclick="goToSlide(3)"></div>
                 </div>
                 <div class="slider-navigator-left" onclick="prevSlide()">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41">
@@ -440,7 +440,7 @@
                 <p class="terms-and-conditions" onclick="toggleOverlay()">წესები და პირობები</p>
             </div>
             <div class="footer_right">
-                <div>
+                <div class="footer_social">
                     <a href="https://www.facebook.com/tbcbank/" target="_blank">
                         <img src="./images/facebook_link_logo.webp" alt="Facebook Link">
                     </a>
@@ -481,7 +481,7 @@
             აფილირებულ კომპანიებს), ხოლო ტერმინი „თქვენ“, „მომხმარებელი“ გულისხმობს ინდივიდს, კომპანიას, ორგანიზაციულ
             წარმონაქმნს, რომელიც იყენებს ბანკის წინამდებარე ვებ-გვერდს.
         </p>
-        <button>დახურვა</button>
+        <div class="closetermsidebar close" onclick="toggleOverlay()">დახურვა</div>
     </div>
 
     <!-- overlay -->

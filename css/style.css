@@ -28,6 +28,10 @@
     background-color: #313131;
 }
 
+.current {
+    color: #00a3e0 !important;
+}
+
 @media screen and (max-width: 1000px) {
     section {
         padding-left: 20px;

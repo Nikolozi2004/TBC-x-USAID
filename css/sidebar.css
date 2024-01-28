@@ -1,6 +1,6 @@
 .mobile_sidebar_nav {
     display: flex !important;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: fixed;
     top: 0;
@@ -10,6 +10,30 @@
     background-color: rgb(34, 34, 34);
     transition: 0.9s;
     z-index: 2000;
+    font-family: "TBC-reg";
+}
+
+.sidebar {
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidebar_link_container {
+    list-style: none;
+    list-style-type: none;
+    width: 50%;
+    text-align: right;
+}
+
+.sidebar_link {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-family: 'TBC-reg';
+    font-weight: lighter;
 }
 
 .is-active-sec {
@@ -29,6 +53,8 @@
     background-color: rgb(34, 34, 34);
     transition: 0.9s;
     z-index: 4000;
+    color: #8c8c8c !important;
+    padding: 7vh;
 }
 
 .back {
@@ -39,6 +65,26 @@
     height: 22px;
     fill: #808080;
     cursor: pointer;
+}
+
+.closetermsidebar {
+    margin-top: 30px;
+    cursor: pointer;
+    height: 60px;
+    background-color: #dbdbdb;
+    color: #2b2b2b !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 6px;
+    width: 100%;
+    font-family: 'TBC-reg';
+}
+.closetermsidebar:hover {
+    background-color: #00a3e0;
+    transition: 0.3s;
+    color: #ffffff !important;
 }
 
 #overlay {
@@ -52,7 +98,5 @@
     background-color: black;
     opacity: 0.6;
     pointer-events: none;
-    /* Allow interaction with elements behind the overlay */
     transition: opacity 0.4s ease-in;
-    /* Optional: add a smooth transition effect */
 }
